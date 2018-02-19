@@ -1,0 +1,196 @@
+body {
+  font-family: 'saxmono', sans-serif;
+  line-height: 1.5;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul {
+  padding: 15px;
+}
+
+/* Header Styles------------------- */
+
+.name {
+  color: #1c1b18;
+
+}
+
+.nav li {
+  font-weight: bold;
+}
+
+/* Featured -----------------*/
+
+.featured {
+  background: linear-gradient(0deg, #fff, transparent 10%),
+              grey url('../img/typewriter.jpg') no-repeat center/cover;
+  color: white;
+  text-shadow: black 3px 3px 3px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.featured a:link {
+  color: white;
+}
+
+.learn-button,
+.services-button {
+  display: block;
+  width: 20%;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 0 auto;
+  line-height: 1;
+}
+
+/* link styles --------------------------- */
+
+a:link {
+  text-decoration: none;
+  color: #ee630a;
+  display: block;
+}
+
+a:hover {
+  color: #e49969;
+}
+
+a:visited {
+  color: #ec8644;
+}
+
+a:focus {
+  color: #ec8644;
+  background-color: rgb(28, 27, 24);
+}
+
+/* Page Content ---------*/
+
+.about img {
+  width: 50px;
+  margin-top: 50px;
+}
+
+.portfolio {
+  margin-top: 50px;
+  background: linear-gradient(180deg, #fff, transparent 10%),
+              url('../img/rustic.jpg') no-repeat center/cover;
+  color: white;
+  padding: 10px 0;
+  position: relative;
+}
+
+.portfolio img {
+  max-width: 300px;
+}
+
+.morework {
+  display: block;
+  width: 80px;
+  position: absolute;
+  top: .5em;
+  right: .5em;
+}
+
+.morework a {
+  padding: .25em 0;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.footer {
+  background-color: #553838;
+  padding: 2.5em 0;
+}
+
+
+/* Contact section --------------------*/
+
+.contact {
+  padding: 2em 0;
+  margin: 1em;
+}
+
+/* Clearfix */
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+/* Fonts ----------------------------- */
+
+@font-face {
+  font-family: 'saxmono';
+  src: url(../font/saxmono.woff);
+}
+
+/* Media Queries ----------------------*/
+
+@media (min-width: 790px) {
+
+  .learn-button a,
+  .services-button a {
+    padding-top: 20px;
+  }
+
+  .name {
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .nav {
+    float: right;
+  }
+
+  .nav li {
+    padding: 15px;
+    display: inline-block;
+  }
+
+  .nav a:hover {
+    color: white;
+    background-color: #423e3a;
+  }
+
+  .portfolio figure {
+    display: inline-block;
+  }
+
+  .portfolio {
+    padding: 75px 0;
+  }
+
+  .about {
+    margin-bottom: 50px;
+  }
+
+  .about div {
+    width: 20%;
+    display: inline-block;
+  }
+
+  .featured {
+    color: white;
+    text-shadow: black 3px 3px 3px;
+    padding: 200px 0;
+    font-size: 2em;
+  }
+
+  .featured p {
+    font-size: .8em;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+}
